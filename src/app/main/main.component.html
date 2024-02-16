@@ -1,0 +1,29 @@
+<section class="main">
+    <div class="user-back d-flex align-items-center">
+        <a href="#"><img src="../../assets/img/back.png" alt="" width="25px" height="25px"></a>
+        <p class="m-0">Jeff Aldorisio</p>
+    </div>
+    <div class="tabs">
+        <mat-tab-group class="main-tab-group" mat-stretch-tabs="false" mat-align-tabs="start">
+            <mat-tab *ngFor="let tab of tabs">
+              <ng-template mat-tab-label>
+                <ng-container *ngIf="tab.isImageLabel">
+                  <img [src]="tab.imagePath" alt="{{ tab.label }}" style="width: 24px; height: 24px;">
+                </ng-container>
+                <ng-container *ngIf="!tab.isImageLabel">
+                  {{ tab.label }}
+                </ng-container>
+              </ng-template>
+          
+              <ng-container *ngIf="tab.contentComponent">
+                <ng-container *ngComponentOutlet="tab.contentComponent"></ng-container>
+              </ng-container>
+          
+              <ng-container *ngIf="!tab.contentComponent">
+                <div>{{ tab.content }}</div>
+              </ng-container>
+            </mat-tab>
+          </mat-tab-group>
+          
+    </div>
+</section>

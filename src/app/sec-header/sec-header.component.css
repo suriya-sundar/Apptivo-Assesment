@@ -1,0 +1,19 @@
+.sec-header{
+    background-color: #F5F5F5;
+}
+.input-group {
+    position: relative;
+}
+.arrow-icon {
+    position: absolute;
+    top: 50%;
+    right: 28%;
+    transform: translateY(-50%);
+    width: 12px;
+    height: 12px;
+    background-image: url('../../assets/img/arrow-down-sign-to-navigate.png');
+    background-size: cover;
+}
+button{
+    border: none;
+}

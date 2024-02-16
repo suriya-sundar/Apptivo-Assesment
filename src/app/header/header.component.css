@@ -1,0 +1,30 @@
+.header{
+  background: linear-gradient(to right, #6308BF 30%, #7409ffd2);
+  padding: 2px 0px;
+}
+.menu-items li {
+  padding: 0px 14px;
+}
+.input-group {
+  position: relative;
+}
+.right{
+  column-gap: 30px;
+}
+.icons-header {
+  column-gap: 18px;
+}
+.search-icon {
+  position: absolute;
+  top: 50%;
+  right: 10px; 
+  transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
+  background-image: url('../../assets/img/search.png');
+  background-size: cover;
+}
+.user-pro{
+  gap: 10px;
+  color: #fff;
+}

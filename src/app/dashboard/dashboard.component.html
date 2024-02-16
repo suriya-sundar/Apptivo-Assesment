@@ -1,0 +1,42 @@
+<div class="sidenav">
+    <mat-drawer-container class="dashboard" autosize>
+        <mat-drawer #drawer class="sidebar" mode="side">
+            <button class="create-user">
+                <img src="../../assets/img/add-user.png" alt=""> &nbsp; <b> &nbsp;Create Contact</b>
+            </button>
+            <button (click)="toggleDropdown()" class="lists">
+                <img src="../../assets/img/lists.png" alt="" width="25px" height="25px"> &nbsp; <b> &nbsp;Lists</b>
+            </button>
+
+            <div *ngIf="isDropdownOpen" class="dropdown">
+            <ul>
+                <li>Option 1</li>
+                <li>Option 2</li>
+                <li>Option 3</li>
+            </ul>
+            </div>
+
+            <button (click)="toggleDropdown2()" class="links">
+                <img src="../../assets/img/external-link.png" alt="" width="25px" height="25px"> &nbsp; <b> &nbsp;Useful Links</b>
+            </button>
+
+            <div *ngIf="isDropdownOpen2" class="dropdown2">
+                <ul>
+                    <li>Option 1</li>
+                    <li>Option 2</li>
+                    <li>Option 3</li>
+                </ul>
+                </div>
+
+        </mat-drawer>
+      
+        <div class="sidenav-content">
+            <button class="panel" type="button" mat-button (click)="drawer.toggle()">
+                <img src="../../assets/img/left.png" alt="" width="25px" height="25px">
+            </button>
+            <div class="main p-4">
+                <app-main></app-main>
+            </div>
+        </div>
+    </mat-drawer-container>
+</div>

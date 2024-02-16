@@ -1,0 +1,20 @@
+tr.mat-mdc-header-row.mdc-data-table__header-row.cdk-header-row {
+    background: #fff;
+    color: #000;
+}
+::ng-deep tbody.mdc-data-table__content {
+    background: #ededed !important;
+}
+td.mat-mdc-cell.mdc-data-table__cell {
+    color: #000;
+}
+mat-paginator.mat-mdc-paginator {
+    background: #fff;
+    color: #000;
+}
+::ng-deep mat-table .mat-mdc-text-field-wrapper.mdc-text-field {
+    background: #cfcfcf !important;
+}
+::ng-deep tr.mat-mdc-row.mdc-data-table__row td {
+    border-bottom: 1px solid #dfdfdf;
+}

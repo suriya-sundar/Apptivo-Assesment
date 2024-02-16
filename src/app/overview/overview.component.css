@@ -1,0 +1,35 @@
+.overview-com{
+    background-color: #F6F6F6;
+}
+::ng-deep .inner-tabs span.mdc-tab-indicator {
+    display: none;
+}
+::ng-deep .inner-tabs .mat-mdc-tab.mdc-tab {
+    flex-grow: 0;
+    padding: 0px 40px;
+    background: #ECECEC;
+    margin-top: 15px;
+}
+::ng-deep .inner-tabs .mat-mdc-tab.mdc-tab:first-child {
+    background-color: #ECECEC !important;
+}
+::ng-deep .inner-tabs .mat-mdc-tab.mdc-tab:nth-child(2) {
+    background-color: #ECECEC !important;
+}
+::ng-deep .inner-tabs .mat-mdc-tab.mdc-tab--active{
+    background-color: #fff !important;
+}
+::ng-deep .inner-tabs .mat-mdc-tab.mdc-tab {
+    width: 150px;
+    border-radius: 5px 5px 0px 0px;
+}
+::ng-deep .inner-tabs .mat-mdc-tab.mdc-tab span img {
+    margin-right: 7px;
+}
+::ng-deep .inner-tabs .mat-mdc-tab.mdc-tab span {
+    font-size: 12px;
+    font-weight: 400;
+}
+::ng-deep .inner-tabs .mat-mdc-tab.mdc-tab.mdc-tab--active {
+    background: #fff !important;
+}

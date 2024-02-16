@@ -1,0 +1,44 @@
+p{
+    color: black;    
+    font-size: 16px;
+    font-weight: 400;
+}
+.main{
+    padding: 0px 15px;
+}
+.user-back{
+    column-gap: 20px;
+}
+.tabs{
+    margin: 20px 0px;
+}
+::ng-deep .main-tab-group .mat-mdc-tab .mdc-tab__text-label {
+    color: #000000 !important;
+}
+::ng-deep .main-tab-group .mat-mdc-tab.mdc-tab {
+    flex-grow: 0;
+    margin: 0px 3px;
+    height: 35px !important;
+}
+::ng-deep .main-tab-group .mat-mdc-tab.mdc-tab:first-child {
+    background-color: #F6F6F6 !important;
+    border-radius: 5px 4px 0px 0px;
+    width: 160px;
+}
+::ng-deep .main-tab-group .mat-mdc-tab.mdc-tab:nth-child(2) {
+    background-color: #FFD953 !important;
+    border-radius: 5px 4px 0px 0px;
+    width: 130px;
+}
+::ng-deep .main-tab-group .mdc-tab {
+    min-width: 50px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+::ng-deep .main-tab-group .mat-mdc-tab.mdc-tab span {
+    font-size: 14px;
+    font-weight: 400;
+}
+::ng-deep .main-tab-group span.mdc-tab-indicator {
+    display: none;
+}
